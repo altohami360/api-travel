@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug');
             $table->text('description');
-            $table->boolean('is_pulbic')->default(true);
+            $table->boolean('is_public')->default(true);
             $table->integer('number_of_days');
             $table->timestamps();
         });
