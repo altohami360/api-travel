@@ -24,7 +24,7 @@ class Travel extends Model
 
     public function tours(): HasMany
     {
-        return $this->hasMany(Travel::class);
+        return $this->hasMany(Tour::class);
     }
 
     public function numberOfNight(): Attribute

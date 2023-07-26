@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Travel;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+
+    $travels = Travel::with('tours')->first();
+
+    return($travels);
     return view('welcome');
 });
