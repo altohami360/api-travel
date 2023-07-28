@@ -27,13 +27,5 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
-
-        // $this->renderable(function (NotFoundHttpException $e, $request) {
-        //     if ($request->is('api/v1/travels/*/tours')) {
-        //         return response()->json([
-        //             'error' => 'no thing nigga'
-        //         ]);
-        //     }
-        // });
     }
 }
